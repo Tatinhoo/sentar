@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="sentar">
+        <img src="img/cadeira.png" height="350px" alt=""><br> 
+        <button onclick="sentar()" id="btn_sentar">Sente-se</button>
+        <h2 id="msg_sentar"></h2>
+    </div> 
+
+    <script>
+
+        let vetor_sentado = ["Sente-se","Por que não se senta?", "Já está sentado?", "Vamos, sente-se"]
+        let i = 0;
+
+
+        function sentar(){
+            let msg_sentar = document.getElementById("msg_sentar")
+
+
+            if(i > 3){
+                i = 0;
+            }
+        
+            msg_sentar.innerHTML = vetor_sentado[i]
+            i++
+
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
